@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title> My Website Title</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:80%; }
+        sidebar { position: fixed; left: 80%; padding: 1%; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWtpc3VrZXkiLCJhIjoiY2o2dm45b3oyMTFmbDJ3bW41dnk3bTRxbSJ9.TQ3F_lK5_yFk4Qiwoi6W1A';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/akisukey/cj6vnasx744hz2todpecej0xj', // stylesheet location
+    center: [151.209, -33.865], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+</script>
+
+<sidebar>
+<h1> This is the Title </h1>
+<p> This is the body </p>
+</sidebar>
+
+
+</body>
+</html>
