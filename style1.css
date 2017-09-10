@@ -13,18 +13,20 @@ h1{
 	border-width: 10px;
 	border-color: #ffffff;
 	padding: 1%;
-	width: 60%;
+	width: 64%;
 	height:19%;
 	margin:auto;
-	font-size: 90px;
+	font-size: 50px;
 }
 
 p{
 	position: relative;
-	right: 350px;
-	top: 100px;
-	font-size: 24px;
-
+	top: 10px;
+	font-size: 15px;
+	text-align: left;
+	margin-right: 12%;
+	margin-left: 12%;
+	margin-bottom: 1%
 }
 
 footer{
@@ -81,4 +83,3 @@ img{
     background-color: #4CAF50;
     color: white;
 }
-html { overflow-y: hidden; }

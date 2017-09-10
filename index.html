@@ -1,71 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8' />
-    <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
-    <script src='./data.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>CODE1230 Asignment 2</title>
 </head>
+
 <body>
 
-<div id='map'>
-</div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWtpc3VrZXkiLCJhIjoiY2o2dm45b3oyMTFmbDJ3bW41dnk3bTRxbSJ9.TQ3F_lK5_yFk4Qiwoi6W1A';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    center: [142, -30],
-    zoom: 5,
-    pitch: 40,
-    bearing: 20
-});
+ <div class="topnav" id="myTopnav">
+ <a href="index.html">Home</a>
+ <a href="page1.html">Dataset Questions</a>
+ <a href="page2.html">Data Map</a>
+ </div> 	
 
-map.on('load', function() {
+<h1>Urban Analysis</h1>
 
-    map.addLayer({
-        'id': 'data',
-        'type': 'fill-extrusion',
-        'source': {
-            // Geojson Data source used in vector tiles, documented at
-            // https://gist.github.com/ryanbaumann/a7d970386ce59d11c16278b90dde094d
-            'type': 'geojson',
-            'data': data
-        },
-        'paint': {
-            // See the Mapbox Style Spec for details on property functions
-            // https://www.mapbox.com/mapbox-gl-style-spec/#types-function
+<p>CODE1230<br>
+Assignment 2<br><br>
+Dwelling Structure by <br>
+Household Composition and Family Composition
+</p>
 
-            'fill-extrusion-color': {
-                // Get the fill-extrusion-color from the source 'color' property.
-                'property': '16_income',
-                "stops": [
-                    [0, 'black'],
-                    [1000, 'orange']
-                    ]
-            },
-            'fill-extrusion-height': {
-                // Get fill-extrusion-height from the source 'height' property.
-                'property': 'inc_growth',
-                "stops": [
-                    [0.2, 0],
-                    [1, 65535]
-                    ]
-            },
-            //'fill-extrusion-base': {
-            // Get fill-extrusion-base from the source 'base_height' property.
-            // Make extrusions slightly opaque for see through indoor walls.
-            'fill-extrusion-opacity': 0.9
-        }
-    });
-});
-</script>
+<img src="https://i.imgur.com/OL6KOu4.jpg" alt="Image Missing" style="width:50%"/>
+
+<footer>
+<a href="https://github.com/AkisukeY/firstwebsite"> Aaron's Github </a>
+</footer>
+
 
 </body>
 </html>

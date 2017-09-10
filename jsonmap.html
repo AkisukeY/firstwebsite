@@ -2,31 +2,17 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Data Map</title>
+    <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
     <script src='./data.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:60%; }
-        sidebar { position: fixed; left: 80%; padding: 1%; text-align: center;}
+        #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
 </head>
-<link rel="stylesheet" type="text/css" href="style2.css"/>
 <body>
-
- <div class="topnav" id="myTopnav">
- <a href="index.html">Home</a>
- <a href="page1.html">Dataset Questions</a>
- <a href="page2.html">Data Map</a>
- </div>
-
-<sidebar>
-<h1> Insert Story Name Here </h1>
-
-<p> Why is this interesting/explaining information </p>
-</sidebar>
 
 <div id='map'>
 </div>
@@ -35,8 +21,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYWtpc3VrZXkiLCJhIjoiY2o2dm45b3oyMTFmbDJ3bW41d
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [151, -34],
-    zoom: 7,
+    center: [142, -30],
+    zoom: 5,
     pitch: 40,
     bearing: 20
 });
