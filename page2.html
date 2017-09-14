@@ -3,9 +3,9 @@
 <head>
     <meta charset='utf-8' />
     <title>Data Map</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name='viewport' contentSinitial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
-    <script src='./data.js'></script>
+    <script src='./absdata2.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
@@ -25,9 +25,10 @@
  </div>
 
 <sidebar>
-<h1> Insert Story Name Here </h1>
+<h1> Childless Families Across Sydney </h1>
 
-<p> Why is this interesting/explaining information </p>
+<p> Why is this interesting/explaining information<br><br>
+Rob wants to know couple households and families with children, have they increased?</p>
 </sidebar>
 
 <div id='map'>
@@ -60,24 +61,25 @@ map.on('load', function() {
 
             'fill-extrusion-color': {
                 // Get the fill-extrusion-color from the source 'color' property.
-                'property': '16_income',
+                'property': 'no_c_up',
                 "stops": [
-                    [0, 'black'],
-                    [1000, 'orange']
+                    [-1, 'white'],
+                    [-0.5, 'grey'],
+                    [4, '#FF0000']
                     ]
             },
             'fill-extrusion-height': {
                 // Get fill-extrusion-height from the source 'height' property.
-                'property': 'inc_growth',
+                'property': 'no_c_foa',
                 "stops": [
-                    [0.2, 0],
-                    [1, 65535]
+                    [0, 0],
+                    [0.4, 65535]
                     ]
             },
             //'fill-extrusion-base': {
             // Get fill-extrusion-base from the source 'base_height' property.
             // Make extrusions slightly opaque for see through indoor walls.
-            'fill-extrusion-opacity': 0.9
+            'fill-extrusion-opacity': 0.95
         }
     });
 });

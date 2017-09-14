@@ -29,29 +29,6 @@ p{
 	margin-bottom: 1%
 }
 
-footer{
-	position: fixed;
-	bottom:0;
-	font-size: 14px;
-	padding: 1%;
-	color: #ffffff;
-}
-
-a:link{
-  color:#ffffff;
-}
-a:visited{
-  color: #ffffff;
-}
-a:hover{
-  color:#636363;
-}
-a:focus{
-  color:#ffffff;
-}
-a:active{
-  color:#ffffff;
-}
 
 img{
 	position: relative; 
