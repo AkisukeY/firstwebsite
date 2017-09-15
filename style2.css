@@ -1,25 +1,6 @@
 body{
 	background-color: black
 }
-h1{
-	position:relative; top: 10px;
-	text-align: center;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #ffffff;
-	padding: 1%;
-	width: 60%;
-	height:19%;
-	margin:auto;
-	font-size: 90px;
-}
-
-p{
-	position: relative;
-	right: 350px;
-	top: 100px;
-	font-size: 24px;
-
 
 .topnav {
     background-color: #333;
