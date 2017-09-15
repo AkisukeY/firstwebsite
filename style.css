@@ -7,7 +7,7 @@ body {
 }
 
 h1{
-	position:relative; top: 10px;
+	position:absolute; top: 11%; left: 20%;
 	text-align: center;
 	border-style: solid;
 	border-width: 10px;
@@ -20,17 +20,17 @@ h1{
 }
 
 p{
-	position: relative;
-	right: 350px;
-	top: 100px;
+	position: absolute;
+	right: 57%;
+	top: 49%;
 	font-size: 24px;
 
 }
 
 img{
-	position: relative; 
-	left: 240px;
-	bottom: 160px;
+	position: absolute; 
+	left: 45%;
+	bottom: 3%;
 }
 
 .topnav {
